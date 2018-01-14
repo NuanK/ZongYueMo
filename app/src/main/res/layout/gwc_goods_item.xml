@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <CheckBox
+        android:id="@+id/check_gwc_goods"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical" />
+
+    <ImageView
+        android:id="@+id/img_gwc_goods"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_gwc_goods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_gwc_yprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="价格:" />
+
+            <TextView
+                android:id="@+id/tv_gwc_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="价格:"
+                android:textColor="#fa0000"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.bwie.zongyuemo.view.AddDeleteView
+                android:id="@+id/add_delete"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                app:left_item="-"
+                app:middle_item="1"
+                app:right_item="+">
+
+            </com.bwie.zongyuemo.view.AddDeleteView>
+
+            <Button
+                android:id="@+id/btn_gwc_delete"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:background="#ff3306"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
